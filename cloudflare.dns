@@ -1,0 +1,7 @@
+cloudflare_email = example@example.com
+cloudflare_key = CloudflareKey
+cf_domain_name = example.com
+cf_record_name = sub.example.com
+frequency_seconds = 600
+retry_timeout_seconds = 60
+ip_service = http://checkip.amazonaws.com

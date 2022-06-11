@@ -1,0 +1,48 @@
+cabal-version:      2.4
+name:               DynamicDNS
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             kabiiQ
+maintainer:         kabiiQ
+
+-- A copyright notice.
+-- copyright:
+-- category:
+
+executable DynamicDNS
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base ^>=4.14.3.0,
+        ConfigFile ^>=1.1.4,
+        mtl ^>=2.2.2,
+        wreq ^>=0.5.3.3,
+        lens ^>=5.1,
+        bytestring ^>= 0.10.12.1,
+        vector ^>= 0.12.3.1,
+        lens-aeson ^>= 1.2,
+        utf8-string ^>= 1.0.2,
+        text ^>= 1.2.4.1,
+        aeson ^>= 2.0.3.0
+    other-modules: 
+        DNSAPI,
+        Configuration
+    hs-source-dirs:   app
+    default-extensions: OverloadedStrings
+    default-language: Haskell2010
